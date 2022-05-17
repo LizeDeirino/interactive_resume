@@ -1,0 +1,835 @@
+    /* INDEX 
+
+1. MAIN COMPONENTS
+
+2. JUMBOTRON - HERO
+
+3. NAVBAR
+
+4. SECTIONS
+
+5. PROFILE
+
+6. EDUCATION
+
+7. CAREERS
+
+8. ABILITIES
+
+9. CURRENT STUDIES
+
+10. CONTACT
+
+11. FOOTER
+
+12. RESPONSIVENESS
+
+13. STUDY CONTAINERS EFFECT
+
+*/
+    /* MAIN CSS */
+    
+    html,
+    body {
+        color: #434242;
+        font-family: 'Open Sans', sans-serif !important;
+        height: 100%;
+        cursor: default;
+    }
+    
+    body {
+        background: #F3EFE0;
+        font-size: 15px;
+        line-height: 1.64;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6,
+    strong,
+    b {
+        font-family: 'Open Sans', sans-serif !important;
+        margin-bottom: 20px;
+    }
+    
+    h1,
+    h4 {
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    
+    h2,
+    h3 {
+        font-weight: 300;
+        color: #902d5b;
+    }
+    
+    h2 {
+        font-size: 54px;
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: 28px;
+    }
+    
+    p.lead {
+        text-align: center;
+        color: #727878;
+    }
+    
+    p.lead a {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    
+    p.lead a:hover {
+        text-decoration: none;
+    }
+    
+    ul.no-bullets {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    hr {
+        margin: 40px 0px;
+        border-color: #727878;
+        opacity: 0.2;
+        filter: alpha(opacity=20);
+    }
+    
+    .icon {
+        display: inline-block;
+        background: url(images/sm_icon_sprite.png) no-repeat;
+        height: 32px;
+        width: 32px;
+    }
+    
+    .row {
+        margin: 0px;
+    }
+    /* 2. JUMBOTRON - HERO */
+    
+    .jumbotron {
+        background: no-repeat center right fixed url(/uploads/bg-flwr-grey.png);
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/uploads/bg-flwr-grey.png', sizingMethod='scale')";
+        filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(src='/uploads/bg-flwr-grey.png', sizingMethod='scale');
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+    
+    .jumbotron .overlay {
+        background-color: #333333;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        opacity: 0.75;
+        filter: alpha(opacity=75);
+        z-index: 2;
+    }
+    
+    .jumbotron .container {
+        position: relative;
+        top: 28%;
+        z-index: 4;
+        text-align: center;
+    }
+    
+    .jumbotron .container>* {
+        text-align: center;
+        color: #FFFFFF;
+    }
+    
+    .jumbotron .container h1 {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #FFFFFF;
+        border-bottom-color: rgba(255, 255, 255, 0.35);
+        display: inline-block;
+    }
+    
+    .jumbotron .container h1:hover {
+        opacity: 0.5;
+    }
+    
+    .jumbotron .container .lead {
+        font-size: 28px;
+        background: -webkit-linear-gradient(#eee, #333);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .jumbotron .container .lead:hover {
+        z-index: 1;
+        -webkit-text-fill-color: #fff;
+        transition: 2s;
+    }
+    
+    .jumbotron .scroll-down {
+        height: 80px;
+        width: 110px;
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        right: 5%;
+        background-color: #222222;
+        text-align: center;
+        z-index: 6;
+    }
+    
+    .jumbotron .scroll-down .glyphicon {
+        color: #FFFFFF;
+        font-size: 30px;
+        padding-right: 2px;
+        padding-top: 20px;
+        animation-name: wiggle;
+        animation-duration: 1.2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+    }
+    
+    .jumbotron .scroll-down:hover .glyphicon {
+        padding-top: 25px;
+    }
+    /* 3. NAVBAR */
+    
+    .navbar {
+        border: 0px;
+        background-color: #222222;
+        position: absolute;
+        top: 100%;
+        right: 5%;
+        width: 110px;
+        z-index: 999;
+    }
+    
+    .navbar .navbar-collapse {
+        padding: 0px;
+        max-height: none;
+    }
+    
+    .navbar .navbar-nav {
+        float: none;
+    }
+    
+    .navbar-nav {
+        margin: 0px;
+    }
+    
+    .navbar .nav>li {
+        display: block;
+        float: none;
+        height: 80px;
+    }
+    
+    .navbar .nav>li a {
+        display: block;
+        height: 80px;
+        text-align: center;
+        padding-top: 30px;
+        font-weight: 600;
+        color: #FFFFFF;
+    }
+    
+    .navbar .nav>li a:hover,
+    .navbar .nav>li a:focus {
+        color: #999999;
+    }
+    
+    .navbar-default .navbar-nav>.active>a,
+    .navbar-default .navbar-nav>.active>a:hover,
+    .navbar-default .navbar-nav>.active>a:focus {
+        background: #808080;
+        color: #FFFFFF;
+    }
+    
+    .navbar-default .navbar-nav>#profile-nav.active>a,
+    .navbar-default .navbar-nav>#profile-nav.active>a:hover,
+    .navbar-default .navbar-nav>#profile-nav.active>a:focus {
+        background: #902d5b;
+    }
+    
+    .navbar-default .navbar-nav>#education-nav.active>a,
+    .navbar-default .navbar-nav>#education-nav.active>a:hover,
+    .navbar-default .navbar-nav>#education-nav.active>a:focus {
+        background: #82a604;
+    }
+    
+    .navbar-default .navbar-nav>#career-nav.active>a,
+    .navbar-default .navbar-nav>#career-nav.active>a:hover,
+    .navbar-default .navbar-nav>#career-nav.active>a:focus {
+        background: #df6205;
+    }
+    
+    .navbar-default .navbar-nav>#ability-nav.active>a,
+    .navbar-default .navbar-nav>#ability-nav.active>a:hover,
+    .navbar-default .navbar-nav>#ability-nav.active>a:focus {
+        background: #0f637d;
+    }
+    
+    .navbar-default .navbar-nav>#studies-nav.active>a,
+    .navbar-default .navbar-nav>#studies-nav.active>a:hover,
+    .navbar-default .navbar-nav>#studies-nav.active>a:focus {
+        background: #d30038;
+    }
+    
+    .navbar-default .navbar-nav>#contact-nav.active>a,
+    .navbar-default .navbar-nav>#contact-nav.active>a:hover,
+    .navbar-default .navbar-nav>#contact-nav.active>a:focus {
+        background: #dc280f;
+    }
+    
+    .navbar-default .navbar-toggle:hover .icon-bar,
+    .navbar-default .navbar-toggle:focus .icon-bar {
+        background: #222222;
+    }
+    
+    .fixed .navbar {
+        top: 60px;
+        position: fixed;
+    }
+    /* 4. SECTIONS */
+    
+    .background-white {
+        background: #c0c0c0;
+    }
+    
+    .background-white .container {
+        background: #FFFFFF;
+    }
+    
+    .background-gray {
+        background: #4d4d4d;
+    }
+    
+    .background-gray .container {
+        background-color: #252525;
+    }
+    
+    .container {
+        max-width: 1280px;
+        padding: 40px 180px;
+    }
+    /* 5. PROFILE */
+    
+    #profile .row>div {
+        margin-bottom: 20px;
+    }
+    
+    #profile .row>div img {
+        width: 100%;
+        height: auto;
+        max-width: 246px;
+    }
+    
+    .linkedIn {
+        width: 80px;
+        transition: 2s;
+    }
+    /* 6. EDUCATION */
+    
+    .course {
+        height: 100px;
+        margin-bottom: 15px;
+        position: relative;
+        border-radius: 5px;
+        background-color: #fff;
+        padding: 5px;
+    }
+    
+    .course:hover {
+        opacity: 0.7;
+    }
+    
+    .cert-btn {
+        padding: 5px 0px;
+        color: #82a604;
+        position: relative;
+        text-align: center;
+        border-radius: 20px;
+        text-decoration: none;
+        margin: 20px 90px 0 0;
+        border: 1px solid #82a604;
+        background-color: transparent;
+    }
+    
+    .cert-btn:hover {
+        background: #82a604;
+        text-decoration: none;
+    }
+    
+    .cert-btn:visited {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .education {
+        color: #82a604;
+    }
+    
+    .education-bg .active {
+        background-color: #82a604;
+    }
+    
+    #education .education {
+        margin-bottom: 20px;
+    }
+    
+    #education .education p>strong,
+    a {
+        display: block;
+        padding-top: 8px;
+        color: #82a604;
+    }
+    
+    #education .education p,
+    li {
+        color: #fff;
+    }
+    
+    #education a {
+        color: #82a604;
+    }
+    
+    #education a:hover {
+        color: #d2e17c;
+    }
+    
+    #education .education .education-details {
+        display: block;
+        margin-top: 6px;
+    }
+    
+    #education .education-details * {
+        color: #82a604;
+    }
+    
+    #education .seperator {
+        color: #BCBCBC;
+    }
+    /* 7. CAREERS */
+    
+    .careers {
+        color: #df6205;
+    }
+    
+    .career-container {
+        margin: 30px 20px 0 0;
+    }
+    
+    .portfolio-btn {
+        color: #fff;
+        margin: 5px 10px 0 0;
+        border-color: #df6205;
+        background-color: #df6205;
+    }
+    
+    .portfolio-btn:hover {
+        background-color: #f59f30;
+    }
+    
+    .portfolio-outline-btn {
+        color: #df6205;
+        margin: 5px 10px 0 0;
+        border-color: #df6205;
+        background-color: transparent;
+    }
+    
+    .portfolio-outline-btn:hover {
+        background-color: #f59f30;
+    }
+    
+    .careers-bg .active {
+        background-color: #df6205;
+    }
+    
+    #careers .career {
+        margin-bottom: 20px;
+    }
+    
+    #careers strong,
+    a {
+        display: block;
+        padding-top: 8px;
+        color: #df6205;
+    }
+    
+    #careers p,
+    li {
+        color: #fff;
+    }
+    
+    #careers a:hover {
+        color: #252525;
+        text-decoration: none;
+    }
+    
+    #careers a:visited {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    #careers .career-details {
+        display: block;
+        margin-top: 6px;
+    }
+    
+    #careers .career-details * {
+        color: #df6205;
+    }
+    
+    #careers .seperator {
+        color: #BCBCBC;
+    }
+    /* 8. ABILITIES */
+    
+    .abilities {
+        color: #0f637d;
+    }
+    
+    .ability {
+        color: #434242;
+    }
+    
+    .ability-score ul>li {
+        min-height: 30px;
+        padding: 3px 0px;
+    }
+    
+    #abilities ul>li:hover {
+        background: #F2F2F2;
+    }
+    
+    #abilities ul>li .ability-title {
+        width: 60%;
+        display: inline-block;
+    }
+    
+    #abilities ul>li .ability-score {
+        float: right;
+    }
+    
+    #abilities ul>li .ability-score .glyphicon {
+        color: #DFE0E0;
+        font-size: 14px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    
+    #abilities ul>li .ability-score .glyphicon.filled {
+        color: #0f637d;
+    }
+    
+    #abilities ul>li:hover .ability-score .glyphicon {
+        margin-left: 2px;
+    }
+    /* 9. CURRENT STUDIES */
+    
+    .studies {
+        color: #ff6d91;
+    }
+    
+    #studies .row>div {
+        margin-bottom: 30px;
+    }
+    
+    #studies figure {
+        overflow: hidden;
+        position: relative;
+    }
+    
+    #studies figure h3 {
+        color: #ff6d91;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    
+    #studies figure p>strong {
+        width: 60px;
+        margin: 0px;
+        display: inline-block;
+    }
+    
+    #studies figure img {
+        width: 110%;
+    }
+    
+    #studies figure figcaption {
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        padding: 20px 30px;
+        position: absolute;
+    }
+    
+    #studies figure a {
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 0;
+        z-index: 1000;
+        text-indent: 200%;
+        position: absolute;
+        white-space: nowrap;
+    }
+    
+    #studies figure .icon {
+        top: 0px;
+        right: 0px;
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        background: #d30038;
+    }
+    
+    #studies figure .icon span {
+        padding: 15px;
+        font-size: 18px;
+        line-height: 18px;
+    }
+    /*  10 .CONTACT  */
+    
+    #contact {
+        padding-bottom: 50px;
+    }
+    
+    #contact h2,
+    #contact .row * {
+        color: #dc280f;
+    }
+    
+    .contact {
+        padding: 40px;
+    }
+    
+    .contact-container {
+        height: 150px;
+        text-align: center;
+    }
+    
+    .contact-bottom {
+        max-height: 40px;
+    }
+    
+    .contact-bottom:hover {
+        opacity: 0.7;
+    }
+    /*  11. FOOTER  */
+    
+    .dark-footer {
+        height: 80px;
+        padding: 20px;
+        color: white;
+        text-align: center;
+        background: #222222;
+    }
+    /*  12. RESPONSIVENESS */
+    
+    @media (max-width: 1200px) {
+        #interests .interest-content {
+            padding: 20px 0px;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        .jumbotron:before {
+            bottom: 100px;
+            left: 20px;
+            right: 20px;
+            top: 20px;
+        }
+        .jumbotron .container {
+            top: 20%;
+            padding-top: 0px;
+        }
+        .jumbotron .scroll-down {
+            width: 100%;
+            right: 0px;
+        }
+        .navbar {
+            left: 0px;
+            width: 100%;
+        }
+        .navbar .nav>li {
+            height: 60px;
+        }
+        .navbar .nav>li a {
+            height: 60px;
+            font-weight: 600;
+            color: #FFFFFF;
+            padding-top: 20px;
+            text-align: center;
+        }
+        .fixed .navbar {
+            top: 0px;
+        }
+        .container {
+            min-width: 280px;
+            padding: 60px 20px;
+        }
+        .hidden-phone {
+            display: none;
+        }
+        #profile .row * {
+            text-align: center;
+        }
+        #experiences .experience .experience-details>span {
+            display: block;
+            margin-bottom: 6px;
+        }
+        #experiences .experience .experience-details .seperator {
+            display: none;
+        }
+        #interests .left {
+            float: none;
+        }
+        #interests .right {
+            float: none;
+        }
+        #interests>* {
+            text-align: center;
+        }
+        #interests img {
+            width: 50%;
+            height: auto;
+            float: none !important;
+        }
+        #interests .interest-content {
+            padding: 20px 0px;
+        }
+        #contact {
+            padding-bottom: 60px;
+        }
+    }
+    
+    @media only screen and (orientation: portrait) and (max-width: 767px) {
+        .jumbotron {
+            background-size: auto 150%;
+            background-attachment: scroll;
+            -webkit-background-size: auto 150%;
+        }
+    }
+    
+    @media only screen and (orientation: landscape) and (max-width: 767px) {
+        .jumbotron {
+            background-size: 150% auto;
+            background-attachment: scroll;
+            -webkit-background-size: 150% auto;
+        }
+        .jumbotron .lead {
+            display: none;
+        }
+    }
+    
+    @keyframes wiggle {
+        0% {
+            padding-top: 20px;
+        }
+        50% {
+            padding-top: 28px;
+        }
+        100% {
+            padding-top: 20px;
+        }
+    }
+    /*  STUDY EFFECT  */
+    
+    figure.effect {
+        color: #FFF;
+        background: #4D4D4D;
+    }
+    
+    figure.effect img {
+        width: calc(100% + 20px);
+        backface-visibility: hidden;
+        width: -webkit-calc(100% + 20px);
+        transform: translate3d(-10px, 0, 0);
+        -webkit-backface-visibility: hidden;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: translate3d(-10px, 0, 0);
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    }
+    
+    figure.effect:hover img {
+        opacity: 0.2;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    
+    figure.effect figcaption {
+        text-align: left;
+    }
+    
+    figure.effect h3 {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 20px;
+        opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+    }
+    
+    figure.effect:hover h3 {
+        opacity: 1;
+    }
+    
+    figure.effect h3::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        content: '';
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    
+    figure.effect:hover h3::after {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    
+    figure.effect p {
+        padding-top: 10px;
+        opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+    
+    figure.effect:hover p {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
